@@ -1,0 +1,14 @@
+server:
+  port: 9080
+spring:
+  application:
+    name: service
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/spring_festival?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    username: root
+    password: 1234
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
